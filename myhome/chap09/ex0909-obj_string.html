@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            function checkID() {
+                var s = document.getElementById("id").value;
+                if (s.length < 6) {
+                    alert("아이디는 6글자 이상이어야 합니다.");
+                }
+            }
+        </script>
+    </head>
+    <body>
+        아이디: <input type="text" id="id" size=10>
+        <button onclick="checkID()">검사</button>
+    </body>
+    <p>
+        동국대학교 경주캠퍼스 컴퓨터공학과 2022211736 길민준 날짜: 2022.05.12
+    </p>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <script>
+            function Car (model, speed, color)
+            {
+                this.model=model;
+                this.speed=speed;
+                this.color = color;
+                this.brake = function() {
+                    this.speed -= 10;
+                }
+                this.accel = function () {
+                    this.speed += 10;
+                }
+            }
+            myCar = new Car("520d", 60, "red");
+            document.write("모델:" + myCar.model + " 속도:" + myCar.speed + "<br />");
+            myCar.accel();
+            document.write("모델:" + myCar.model + " 속도:" + myCar.speed + "<br />");
+            myCar.brake();
+            document.write("모델:" + myCar.model + " 속도:" + myCar.speed + "<br />");
+        </script>
+    </body>
+    <p>
+        동국대학교 경주캠퍼스 컴퓨터공학과 2022211736 길민준 날짜: 2022.05.12
+    </p>
+</html>

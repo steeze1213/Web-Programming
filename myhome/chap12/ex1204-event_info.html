@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body {  background-color: #eef; }
+            div  {  padding: 20px;  }
+        </style>
+        <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+    </head>
+    <body>
+        <div id="log"></div>
+        <script>
+            $(document).mousemove( function (e) {
+                $("#log").text("e.pageX: " + e.pageX + ", e.pageY: " + e.pageY);
+            });
+        </script>
+    </body>
+    <p>
+        동국대학교 경주캠퍼스 컴퓨터공학과 2022211736 길민준 날짜: 2022.05.17
+    </p>
+</html>

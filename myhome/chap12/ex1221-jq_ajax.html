@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="http://code.jquery.com/jquery-1.10.1.min.js">
+        </script>
+        <script>
+            $(document).ready(function () {
+                $("button").click(function () {
+                    $("#target").load("testfile1.txt");
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <div id="target" style="width: 300px; height: 60px; border: solid 1px black;">
+        </div>
+        <button>Get Data</button>
+    </body>
+    <p>
+        동국대학교 경주캠퍼스 컴퓨터공학과 2022211736 길민준 날짜: 2022.05.17
+    </p>
+</html>

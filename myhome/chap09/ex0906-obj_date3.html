@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <div id='remaining'></div>
+    <script>
+        function datesUntilNewYear() {
+            var now = new Date();
+            var newYear = new Date('January 1, ' + (now.getFullYear() + 1));
+            var diff = newYear - now;
+            var milliseconds = Math.floor(diff % 1000);
+            diff = diff / 1000;
+            var seconds = Math.floor(diff % 60);
+            diff = diff / 60;
+            var minutes = Math.floor(diff % 60);
+            diff = diff / 60;
+            var hours = Math.floor(diff % 24);
+            diff = diff / 24;
+            var days = Math.floor(diff);
+
+            var outStr = '내년도 신정까지 ' + days + '일, ' + hours + '시간, ' + minutes;
+            outStr += '분, ' + seconds + '초' + '남았습니다.';
+
+            document.getElementById('remaining').innerHTML = outStr;
+            setTimeout("datesUntilNewYear()", 1000);
+        }
+
+        datesUntilNewYear();
+    </script>
+        <p>
+            동국대학교 경주캠퍼스 컴퓨터공학과 2022211736 길민준 날짜: 2022.05.12
+        </p>
+</html>

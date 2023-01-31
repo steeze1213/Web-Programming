@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="http://code.jquery.com/jquery-1.10.1.min.js">
+        </script>
+        <script>
+            $(document).ready(function () {
+                $("#button1").click(function () {
+                    $("p").append("<b style='color:red'>Hello! </b>.");
+                });
+                $("#button2").click(function () {
+                    $("p").prepend("<b style='color:red'>Hello! </b>.");
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <p>I would like to say: </p>
+        <button id="button1">append()</button>
+        <button id="button2">prepend()</button>
+    </body>
+    <p>
+        동국대학교 경주캠퍼스 컴퓨터공학과 2022211736 길민준 날짜: 2022.05.17
+    </p>
+</html>

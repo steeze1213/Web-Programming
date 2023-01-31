@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <div id='clock'></div>
+        <script>
+            function setClock() {
+                var now = new Date ();
+                var s = now.getHours() + ':' + now.getMinutes() + ':' + now.getSeconds();
+                document.getElementById('clock').innerHTML = s;
+                setTimeout('setClock()', 1000);
+            }
+            setClock();
+        </script>
+    </body>
+    <p>
+        동국대학교 경주캠퍼스 컴퓨터공학과 2022211736 길민준 날짜: 2022.05.12
+    </p>
+</html>

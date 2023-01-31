@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+    </head>
+    <body>
+        <button>Show it</button>
+        <img id="dog" src="https://cdn.pixabay.com/photo/2016/10/10/14/13/dog-1728494__340.png"
+        alt="" width="120" height="100" style="display: none" />
+        <script>
+            $(document).ready(function () {
+                $("button").click(function () {
+                    $("#dog").toggle();
+                });
+            });
+        </script>
+    </body>
+    <p>
+        수정 부분: img id="dog" src="https://cdn.pixabay.com/photo/2016/10/10/14/13/dog-1728494__340.png"
+    </p>
+    <p>
+        동국대학교 경주캠퍼스 컴퓨터공학과 2022211736 길민준 날짜: 2022.05.17
+    </p>
+</html>

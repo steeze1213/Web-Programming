@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="http://code.jquery.com/jquery-1.10.1.min.js">
+        </script>
+        <style>
+            p{  background-color: yellow;   }
+            .container { height: 80px; width: 200px; border: 1px dotted red;    }
+        </style>
+        <script>
+            $(document).ready(function () {
+                $("#button1").click(function () {
+                    $(".container").remove();
+                });
+            });
+            $(document).ready(function () {
+                $("#button2").click(function () {
+                    $(".container").empty();
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <button id="button1">remove()</button>
+        <button id="button2">empty()</button><br />
+        <div class="container">
+            <p class="Hello">Hello</p>
+            <p class="goodbye">Goodbye</p>
+        </div>
+        <br>
+    </body>
+    <p>
+        동국대학교 경주캠퍼스 컴퓨터공학과 2022211736 길민준 날짜: 2022.05.17
+    </p>
+</html>
